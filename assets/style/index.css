@@ -63,6 +63,7 @@
     }
     
     
+    
 }
 
 @media (max-width:560px){
@@ -71,6 +72,17 @@
     }
     .button input{
         font-size:6px;
+    }
+
+    
+}
+
+@media (max-width:300px){
+    .column{
+        width:100%;
+    }
+    .row{
+        display: inline;
     }
 }
 
@@ -164,7 +176,7 @@ section{
 @media (max-width:1080px ){
     .subscribe a{
       font-size: 16px;
-      margin-right: 60px;
+      margin-right: 160px;
 
     }
 }
@@ -172,7 +184,7 @@ section{
 @media (max-width:900px ){
     .subscribe a{
       font-size: 14px;
-      margin-right: 40px;
+      margin-right: 140px;
 
     }
 }
@@ -194,6 +206,9 @@ section{
       font-size: 12px;
       margin-right:40px ;
 
+    }
+    .row{
+        display: inline;
     }
 }
 
