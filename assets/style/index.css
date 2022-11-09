@@ -7,6 +7,129 @@
 }
 
 
+.flexbox{
+    display: flex;
+}
+
+body{
+    background-color: var(--app-black);
+}
+
+.hello{
+    height:100vh;
+    width: 100%;
+    background-image: url(../img/pexels-eberhard-grossgasteiger-2098428.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    height: 60px;
+}
+
+h1{
+    width:40%;
+    font-size: 40px;
+    font-weight: 600;
+    color:var(--app-grey);
+    margin-right: 30px;
+}
+
+span{
+    color:var(--app-pink);
+}
+nav{
+    width:60%;
+    text-align: center;
+    font-size: 18px;
+    color:var(--app-grey);
+    margin-right: 30px;
+    line-height: 70px;
+}
+
+
+nav ul li {
+    display:inline;
+    list-style: none;
+    margin-right: 50px;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--app-grey);
+}
+nav ul li a:hover{
+    color:var(--app-pink);
+}
+
+
+/*--------------------*/
+/*Responsive Design   */
+/*--------------------*/
+
+@media (max-width:1600px ){
+   
+    nav ul .tag{
+        display:none;
+    }
+}
+
+@media (max-width:1100px ){
+    nav ul li{
+        margin-right: 30px;
+    }
+    nav ul .tag{
+        display:none;
+    }
+}
+
+@media (max-width:1000px){
+    nav ul li{
+        margin-right: 20px;
+    }
+    nav ul .tag{
+        display:none;
+    }
+}
+
+@media (max-width:900px){
+    nav ul li{
+        margin-right: 10px;
+    }
+    nav ul .tag{
+        display:none;
+    }
+}
+
+@media (max-width:770px){
+     h1{
+        font-size: 30px;
+    }
+    nav ul li{
+        font-size: 14px;
+        line-height: 60px;
+        
+    }
+    nav ul .tag{
+        display:none;
+    }
+}
+
+@media (max-width:800px){
+    
+
+    nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5, nav ul .home-1 {
+      display: none;
+    }
+  
+   nav ul .tag {
+      display:inline;
+        font-size:24px;
+        color: var(--app-white);
+        margin-left:240px;
+   }
+  }
+
+
 
 
 /*------------------------*/
@@ -16,7 +139,7 @@
 .column{
     flex-grow:1;
     width:calc(25% - 15px);
-    height:250px;
+
     border-radius: 6px;
    
     margin-top:30px;
@@ -52,6 +175,14 @@
     box-sizing: border-box;
 }
 
+
+
+/*section{
+    min-height:calc(100vh -60px - 80px);}*/
+
+    section{
+        min-height: calc(100vh - 60px - 80px);
+    }
 /*699px and down*/
 @media (max-width:1080px ){
     .column{
@@ -85,9 +216,9 @@
         display: inline;
         
     }
-    .container{
+    /*.container{
         margin-top: 350px;
-    }
+    }*/
     .button{
         width:30%;
         margin-top: 50px;
@@ -102,7 +233,7 @@ div h2{
     color:var(--app-pink);
 }
 p{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 30px;
     color:var(--app-light-pink);
 }
@@ -124,10 +255,10 @@ p{
 section{
     display:grid;
     align-items: center;
-    font-size:36px;
+    /*font-size:36px;*/
     color: var(--app-white);
     text-align:center;
-    margin-top: 50px;
+  /* margin-top: 50px;*/
     width:100%;
 }
 
@@ -237,3 +368,99 @@ section{
     }
 }
 
+/*------------------------*/
+/*Footer                  */
+/*------------------------*/
+
+
+footer {
+    display: flex;
+}
+
+
+footer {
+    background-color: var(--app-dark-grey);
+    height: 80px;
+   /* margin-top: 40px;*/
+    
+}
+
+
+footer  .copy {
+    width: 30%;
+    text-align: right;
+}
+
+ .copy {
+    font-size: 24px;
+    color: var(--app-pink);
+    line-height: 70px;
+ }
+ .tags {
+    width: 70%;
+    text-align: left;
+}
+
+ .tags ul {
+    /*Removing the bullet points from the li's*/
+    list-style: none;
+    font-size: 0;
+}
+
+ .tags ul li {
+    display: inline;
+    line-height: 80px;
+    cursor: default;
+}
+
+.tags ul li a {
+    background-color: var(--app-pink);
+    font-size: 17px;
+    color:  var(--app-white);
+    text-decoration: none;
+    font-weight: 600px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.tags li a {
+    border: 2px solid var(--app-pink);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.tags ul li a i:hover{
+    transform:scale(1.5);
+    font-size: 22px;
+    cursor:pointer;
+}
+
+@media (max-width:900px ){
+    .tags ul li a{
+      font-size: 10px;
+
+    }
+
+    .copy{
+        font-size:13px ;
+    }
+}
+
+
+
+@media (max-width:800px){
+    
+
+  nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5, nav ul .home-1 {
+    display: none;
+  }
+
+ nav ul .tag {
+    display:inline;
+      font-size:24px;
+      color: var(--app-white);
+      margin-left:280px;
+ }
+}
