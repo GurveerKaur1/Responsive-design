@@ -118,7 +118,7 @@ nav ul li a:hover{
 @media (max-width:800px){
     
 
-    nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5, nav ul .home-1 {
+    .six, nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5 {
       display: none;
     }
   

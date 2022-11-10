@@ -5,7 +5,7 @@
  const three = document.querySelector('nav ul .home-4');
  const four = document.querySelector('nav ul .home-5');
  const five = document.querySelector('nav ul .home-6');
- const six = document.querySelector('nav ul .home-1');
+ const six = document.querySelector('.six');
  const nav = document.querySelector('nav');
  
  const section = document.querySelector('.rows');
