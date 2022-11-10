@@ -32,6 +32,7 @@ h1{
     font-weight: 600;
     color:var(--app-grey);
     margin-right: 30px;
+    line-height: 60px;
 }
 
 span{
@@ -43,7 +44,7 @@ nav{
     font-size: 18px;
     color:var(--app-grey);
     margin-right: 30px;
-    line-height: 70px;
+    line-height: 60px;
 }
 
 
@@ -106,7 +107,7 @@ nav ul li a:hover{
     }
     nav ul li{
         font-size: 14px;
-        line-height: 60px;
+        line-height: 70px;
         
     }
     nav ul .tag{
@@ -125,7 +126,8 @@ nav ul li a:hover{
       display:inline;
         font-size:24px;
         color: var(--app-white);
-        margin-left:240px;
+       margin-left:200px;
+        line-height: 60px;
    }
   }
 
@@ -376,7 +378,7 @@ section{
 /*------------------------*/
 
 
-footer {
+.flexbox {
     display: flex;
 }
 
@@ -440,7 +442,8 @@ footer  .copy {
     cursor:pointer;
 }
 
-@media (max-width:900px ){
+@media (max-width:800px ){
+    
     .tags ul li a{
       font-size: 10px;
 
