@@ -115,7 +115,7 @@ nav ul li a:hover{
     }
 }
 
-@media (max-width:800px){
+@media (max-width:600px){
     
 
     .six, nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5 {
@@ -126,7 +126,7 @@ nav ul li a:hover{
       display:inline;
         font-size:24px;
         color: var(--app-white);
-       margin-left:200px;
+       margin-left:180px;
         line-height: 60px;
    }
   }
@@ -466,7 +466,7 @@ footer  .copy {
 
 
 
-@media (max-width:390px){
+/*@media (max-width:390px){
     
 
   nav ul li a{
@@ -478,5 +478,5 @@ footer  .copy {
       font-size:20px;
       color: var(--app-white);
       /*margin-left:280px;*/
- }
-}
+/* }
+}*/

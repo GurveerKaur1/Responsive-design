@@ -18,7 +18,7 @@
     count++;
  
  
-    if(count%2 === 0 && window.innerWidth < 800 ){
+    if(count%2 === 0 && window.innerWidth < 900 ){
     //body.style.background='white';  
     h2.style.display='none'; 
     section.style.display='none';    
