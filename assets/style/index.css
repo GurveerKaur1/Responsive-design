@@ -389,7 +389,10 @@ footer {
     margin-top: 20px;
     
 }
-
+footer .container{
+    /*width:min(100% - 30px, 1280px);*/
+    margin-inline: auto;
+}
 
 footer  .copy {
     width: 30%;
@@ -472,7 +475,7 @@ footer  .copy {
 
  nav ul .tag {
     display:inline;
-      font-size:24px;
+      font-size:20px;
       color: var(--app-white);
       /*margin-left:280px;*/
  }
