@@ -181,7 +181,7 @@ nav ul li a:hover{
     min-height:calc(100vh -60px - 80px);}*/
 
     section{
-        min-height: calc(100vh - 60px - 80px);
+        min-height: calc(100vh - 60px - 80px - 20px);
     }
 /*699px and down*/
 @media (max-width:1080px ){
@@ -381,7 +381,7 @@ footer {
 footer {
     background-color: var(--app-dark-grey);
     height: 80px;
-   /* margin-top: 40px;*/
+    margin-top: 20px;
     
 }
 
