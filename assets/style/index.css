@@ -413,7 +413,7 @@ footer  .copy {
     cursor: default;
 }
 
-.tags ul li a {
+.tags ul li a, .tags ul .foot{
     background-color: var(--app-pink);
     font-size: 17px;
     color:  var(--app-white);
@@ -424,7 +424,7 @@ footer  .copy {
     transition: transform .4s;
 }
 
-.tags li a {
+.tags li a, .tags ul .foot {
     border: 2px solid var(--app-pink);
     border-radius: 50%;
     padding: 10px;
@@ -445,6 +445,13 @@ footer  .copy {
 
     .copy{
         font-size:13px ;
+    }
+    .copy{
+        font-size:13px ;
+    }
+   footer .copy{
+       text-align: right;
+        width: 100%;
     }
 }
 
