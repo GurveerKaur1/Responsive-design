@@ -118,7 +118,7 @@ nav ul li a:hover{
 @media (max-width:800px){
     
 
-    nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5, nav ul .home-1 {
+    nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5 {
       display: none;
     }
   
@@ -183,7 +183,7 @@ nav ul li a:hover{
     min-height:calc(100vh -60px - 80px);}*/
 
     section{
-        min-height: calc(100vh - 60px - 80px - 20px);
+        min-height: calc(100vh - 60px - 80px );
     }
 /*699px and down*/
 @media (max-width:1080px ){
@@ -469,7 +469,7 @@ footer  .copy {
 @media (max-width:390px){
     
 
-  nav ul .home-2 ,  nav ul .home-3 ,  nav ul .home-4, nav ul .home-5, nav ul .home-1 {
+  nav ul li a{
     display: none;
   }
 

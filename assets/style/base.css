@@ -69,7 +69,7 @@ input[type=button], input[type=submit], input[type=clear], button, a {
   cursor: pointer;
 }
 
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
@@ -85,4 +85,4 @@ input[type=button], input[type=submit], input[type=clear], button, a {
 .container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
-} 
+} */

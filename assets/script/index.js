@@ -7,11 +7,10 @@
  const five = document.querySelector('nav ul .home-6');
  const six = document.querySelector('nav ul .home-1');
  const nav = document.querySelector('nav');
- const first = document.querySelector('nav ul .first');
- const second = document.querySelector('nav ul .second');
- const third = document.querySelector('nav ul .third');
- const ul = document.querySelector('nav ul li');
- const li = document.querySelector('nav ul li a');
+ 
+ const section = document.querySelector('.rows');
+ const h2 = document.querySelector('h2');
+ const act = document.querySelector('nav ul li a');
  
 
  let count=2;
@@ -20,17 +19,19 @@
  
  
     if(count%2 === 0 && window.innerWidth < 800 ){
-        
-        
-        
-    one.style.display = 'inline';
-    two.style.display = 'inline';
-    three.style.display = 'inline';
-    four.style.display = 'inline';
-    five.style.display = 'inline';
-    six.style.display = 'inline';}
+    //body.style.background='white';  
+    h2.style.display='none'; 
+    section.style.display='none';    
+    one.style.display = 'flex';
+    two.style.display = 'flex';
+    three.style.display = 'flex';
+    four.style.display = 'flex';
+    five.style.display = 'flex';
+    six.style.display = 'flex';
+}
     else if(count%2 === 1 && window.innerWidth < 700){
-        
+        h2.style.display='grid';
+        section.style.display = 'grid';
         one.style.display = 'none';
     two.style.display = 'none';
     three.style.display = 'none';
@@ -38,15 +39,7 @@
     five.style.display = 'none';
     six.style.display = 'none';
 
-    } else if ( window.innerWidth > 900){
-        one.style.display = 'inline';
-        two.style.display = 'inline';
-        three.style.display = 'inline';
-        four.style.display = 'inline';
-        five.style.display = 'inline';
-        six.style.display = 'inline';
-    }
- 
+    } 
 ;});
 
 /*let number = 1;
