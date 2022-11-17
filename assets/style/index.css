@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: var(--app-black);
+    background-color: #fff;
 }
 
 .hello{
@@ -30,19 +30,19 @@ h1{
     width:40%;
     font-size: 40px;
     font-weight: 600;
-    color:var(--app-grey);
+    color:olive;
     margin-right: 30px;
     line-height: 60px;
 }
 
 span{
-    color:var(--app-pink);
+    color:purple;
 }
 nav{
     width:60%;
-    text-align: center;
+    text-align: right;
     font-size: 18px;
-    color:var(--app-grey);
+    color:olive;
     margin-right: 30px;
     line-height: 60px;
 }
@@ -56,7 +56,7 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
-    color:var(--app-grey);
+    color:olive;
 }
 nav ul li a:hover{
     color:var(--app-pink);
@@ -131,6 +131,15 @@ nav ul li a:hover{
    }
   }
 
+/*------banner-------*/
+.banner{
+    height:500px;
+    width: 100%;
+   /* background-image: url(../img/pexels-pixabay-461198.jpg);*/
+    background-size: cover;
+    background-position: fixed;
+    background:  url("../img/pexels-pixabay-461198.jpg") center center / cover no-repeat fixed;
+}
 
 
 
@@ -151,40 +160,68 @@ nav ul li a:hover{
      display:flex;
      gap:20px;
  }
- 
 
+ .rows h2{
+    text-align: left;
+    color: olive;
+ }
+img{
+   
+    height:160px;
+    width:100%;
+    transition: transform .4s;
+}
+
+img:hover{
+    transform:scale(1.1);
+    
+    
+}
 .one{
-    background-color: var(--app-dark-grey);
+    background-color:#d6d6d6;
     padding:20px;
     box-sizing: border-box;
 }
 
 .two{
-    background-color:var(--app-dark-grey) ;
+    background-color:#d6d6d6 ;
     padding:20px;
     box-sizing: border-box;
 }
 
 .three{
-    background-color: var(--app-dark-grey);
+    background-color: #d6d6d6;
     padding:20px;
     box-sizing: border-box;
 }
 
 .four{
-    background-color: var(--app-dark-grey);
+    background-color:#d6d6d6;
     padding:20px;
     box-sizing: border-box;
 }
 
+.one:hover, .two:hover, .three:hover, .four:hover{
+    box-shadow:0px 0px 10px  rgb(0 0 0 / 0.6) ;
+}
+h2{
+    color: lightsalmon;
+}
 
-
+.menu{
+    background-color: #d6d6d6;
+    height:200px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    margin: 20px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 0.1); ;
+}
 /*section{
     min-height:calc(100vh -60px - 80px);}*/
 
-    section{
-        min-height: calc(100vh - 60px - 80px );
-    }
+    
 /*699px and down*/
 @media (max-width:1080px ){
     /*.column{
@@ -235,7 +272,7 @@ nav ul li a:hover{
 
 div h2{
     font-size:24px;
-    color:var(--app-pink);
+    color:saddlebrown;
 }
 p{
     /*margin-top: 10px;*/
@@ -246,8 +283,8 @@ p{
 .button input{
     height:50px;
     width:50%;
-    background-color: var(--app-pink);
-    border: 2px solid var(--app-pink);
+    background-color:saddlebrown;
+    border: 2px solid saddlebrown;
     border-radius:12px;
     font-size: 20px;
     color: var(--app-white);
@@ -268,7 +305,8 @@ section{
 }
 
 .button input:hover{
-    background-color: var(--app-dark-grey);
+    background-color: sienna;
+    border: 2px solid sienna;
 }
 
 .subscribe{
@@ -281,7 +319,7 @@ section{
 
 .subscribe .button{
     height:60px;
-    background-color: var(--app-pink);
+    background-color:olivedrab;
     border-radius: 34px;
     margin-top: 60px;
     transition: transform .4s;
@@ -384,7 +422,7 @@ section{
 
 
 footer {
-    background-color: var(--app-dark-grey);
+    background-color: #fff;
     height: 80px;
     margin-top: 20px;
     
@@ -394,19 +432,12 @@ footer .container{
     margin-inline: auto;
 }
 
-footer  .copy {
-    width: 30%;
-    text-align: right;
-}
 
- .copy {
-    font-size: 24px;
-    color: var(--app-pink);
-    line-height: 70px;
- }
+
+ 
  .tags {
-    width: 70%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
 
  .tags ul {
@@ -415,14 +446,44 @@ footer  .copy {
     font-size: 0;
 }
 
+.cake, .cake2{
+    display:flex;
+}
+
+
+.cake p, .cake2 p, .cake .head, .cookies .cake2 p{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+}
+.cake p, .cookies p {
+    font-size: 20px;
+    color:saddlebrown;
+}
+.cake .price{
+    margin-left: 160px;
+}
+.head{
+    margin: 0;
+}
  .tags ul li {
     display: inline;
     line-height: 80px;
     cursor: default;
 }
 
+.rows+.rows{
+    margin-top: 20px;
+}
+section h2{
+    font-size: 40px;
+    font-family: "PT Serif", serif;
+}
 .tags ul li a, .tags ul .foot{
-    background-color: var(--app-pink);
+    background-color: #d6d6d6;
     font-size: 17px;
     color:  var(--app-white);
     text-decoration: none;
@@ -433,7 +494,7 @@ footer  .copy {
 }
 
 .tags li a, .tags ul .foot {
-    border: 2px solid var(--app-pink);
+    border: 2px solid #d6d6d6;
     border-radius: 50%;
     padding: 10px;
     margin-right: 5px;
